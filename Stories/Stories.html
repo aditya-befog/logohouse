@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stories</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <link rel="icon" href="../img/icon.png" sizes="64x64" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" aria-label="Primary navigation">
+        <div class="logo">
+          <img src="../img/icon.png" alt="Lego House Architects Logo" />
+        </div>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars" id="hamburger"></i>
+          <i class="fas fa-times" id="close" style="display: none"></i>
+        </div>
+        <div class="menu" id="menu">
+          <a href="../index.html">Projects</a>
+          <a href="../Stories/Stories.html">Stories</a>
+          <a href="../Career/Career.html">Career</a>
+          <a href="../Contact/contact.html">Contact</a>
+          <a href="../About/about.html">About Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="text">
+      <p data-aos="fade-down" data-aos-duration="1000">SUCCESS</p>
+      <div class="big-text">
+        <h1 data-aos="fade-down" data-aos-delay="1000">Stories</h1>
+      </div>
+      <div class="search-container" data-aos="fade-down" data-aos-delay="2000">
+        <input type="text" placeholder="Search..." class="search-input" />
+        <button class="search-btn" aria-label="Search Button">Search</button>
+      </div>
+    </div>
+    <div class="container">
+      <div id="slide">
+          <div class="item" style="background-image: url(../img/1.jpeg);">
+          </div>
+          <div class="item" style="background-image: url(../img/2.jpeg);">
+          </div>
+          <div class="item" style="background-image: url(../img/3.jpeg);">
+          </div>
+          <div class="item" style="background-image: url(../img/1.jpeg);">
+          </div>
+          <div class="item" style="background-image: url(../img/2.jpeg);">
+          </div>
+          <div class="item" style="background-image: url(../img/3.jpeg);">
+          </div>
+      </div>
+      <div class="buttons">
+          <button id="prev"><i class="fa-solid fa-angle-left"></i></button>
+          <button id="next"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+  </div>
+    <div class="footer" data-aos="fade-up" data-aos-duration="1000">
+      <img src="../img/icon.png" alt="Logo">
+      <h2>Quick Link</h2>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+    <script src="stories.js"></script>
+  </body>
+</html>
